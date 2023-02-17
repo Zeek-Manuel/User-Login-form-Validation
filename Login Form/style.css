@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    height: 100vh;
+    background-color: rgb(177, 236, 238);
+}
+
+.app-container {
+    max-width: 1520px;
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 3rem;
+    font-size: 1.2rem;
+}
+
+.form {
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem 1rem;
+    box-shadow: 0 .1rem 1.2rem rgba(30, 30, 30, .15);
+    background-color: rgb(255, 255, 255);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+h1 {
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    size: 1rem;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: .9rem;
+    padding-top: .7rem;
+    border-radius: 3rem;
+    gap: .5rem;
+}
+
+.text {
+    padding-top: 4rem;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+input {
+    width: 300px;
+    border-radius: .5rem;
+    outline: none;
+    border: none;
+    border-top: .2px solid transparent;
+    border-bottom: .5px solid rgb(197, 198, 231);
+    padding: .8rem;
+}
+
+input:hover {
+    box-shadow: 0 .1rem  black;
+}
+
+button {
+    padding: .5rem;
+    background-color: rgb(177, 236, 238);
+    font-size: 1.2rem;
+    border-radius: .4rem;
+    border: 10px;
+    box-shadow: 0 .1rem 1.2rem rgba(30, 30, 30, .15);
+
+}
+
+
+button:hover {
+ box-shadow: .1rem 0 .3rem rgb(255, 255, 255);
+ cursor: pointer;
+
+}
+
+
+#password {
+    size: 4rem;
+}
+
+.form-control input:focus {
+    outline: 0;
+}
+.form-control.success input {
+    border-color: green;
+}
+.form-control.error input {
+    border-color: red;
+}
+
+#error {
+    color: red;
+    text-align: center;
+}
+
+.input-error {
+    border: 1px solid red;
+    color: red;
+}
+.btn-disabled {
+    opacity: .25;
+    pointer-events: none;
+    cursor: not-allowed;
+}
